@@ -10,12 +10,12 @@ import * as Speech from 'expo-speech';
 export default class Dmap extends React.Component{
     state = {
         loading: true,
-        isClose: true,
+        isClose: false,
         polyLoading: true,
         arrive: false,
         lat_delta: 0.005,
         lng_delta: 0.005,
-        close_meter: 3,
+        close_meter: 0,
         start_lat: 0,
         start_lng: 0,
         end_lat: 0,

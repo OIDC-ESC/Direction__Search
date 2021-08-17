@@ -35,7 +35,6 @@ cloud : NAVER CLOUD PLATFORM
 ## **💻  설치**
 
 ### a. Expo 설치
-
 [공식 사이트](https://docs.expo.dev)의 가이드를 따라서 Expo를 설치한다.
 
 ### b. 이 Repository를 Clone 한다.
@@ -46,12 +45,34 @@ git clone https://github.com/OIDC-ESC/Direction_search
 
 ## **💻  실행**
 
-**Direction_search/frontend/에서 다음을 실행**
+### a. 다음 내용을 넣어 **putty** 실행
+```shell
+ip: 175.106.99.29
+id: root
+pw: D5Y+MRn3Hcyd
+```
+
+### b. putty에 localtunnel 실행
+```shell
+$ lt --port 5000 --subdomain oidcesc --print-requests
+```
+
+### c. 새로운 putty창에 서버 구동
+```shell
+$ java -jar /var/www/Direction_search/backend/target/backend-0.0.1-SNAPSHOT.jar
+```
+
+### d. **Direction_search/frontend**에서 다음을 실행
 
 ```shell
 npm run ios
 npm run android
 ```
+혹은
+```shell
+npm start
+```
+입려 후 expo 사이트를 통해 **Emulator(Android)/Simulator(ios)/Expo App**을 이용해 앱 실행
 <br/>
 
 ## **🔒Team:ESC Member**
